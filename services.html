@@ -17,7 +17,7 @@
             object-fit: cover; /* Ensure the image covers the area without stretching */
         }
 
-        h5, p{
+        h5, p {
             color: black;
         }
 
@@ -34,36 +34,58 @@
         .navbar-nav .nav-link:hover {
             color: #ccc; /* Optional: change color on hover */
         }
+        .navbar-toggler {
+            border-color: white; /* Ensure the border of the button is visible */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            /* Custom icon to make it visible */
+        }
+
+        footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    }
+    footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    }
+    .list-inline-item {
+    margin-right: 15px; /* Add space between social media links */
+    }
+
+
+     
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="index.html">R&G Property Management</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">R & G Property Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- Added mx-auto to center the links -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 <div id="services" class="container mt-5">
     <h2 class="text-center">Our Services</h2>
@@ -89,7 +111,6 @@
             </div>
         </div>
 
-
         <div class="col-md-4">
             <div class="card mb-4">
                 <img src="service2.jpg" class="card-img-top" alt="Service 2">
@@ -99,6 +120,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="col-md-4">
             <div class="card mb-4">
                 <img src="service3.jpg" class="card-img-top" alt="Service 3">
@@ -138,9 +160,6 @@
                 </div>
             </div>
         </div>
-
-       
-
     </div>
 </div>
 <br>
@@ -154,5 +173,47 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
+
+
+
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5 class="text-white">Follow Us</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/profile.php?id=61563543016766" target="_blank" class="text-white">Facebook</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com" target="_blank" class="text-white">Instagram</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.twitter.com" target="_blank" class="text-white">Twitter</a>
+                    </li>
+                </ul>
+                <p class="text-white"><strong>Office Zoom: </strong> </p>
+                   <p class="text-white"> Monday to Friday 8 am to 11 am Philippine Time </p>
+            
+                <p>  <a href="https://us05web.zoom.us/j/4471618432?pwd=APtb6Le6ECxPjFboA8iMZOcdVar9Nh.1">Zoom Link</a>
+                      
+                  
+                  </p>
+            </div>
+            <div class="col">
+                <h5 class="text-white">Business Hours</h5>
+                <p class="text-white">Monday - Friday: 9 AM - 5 PM</p>
+                <p class="text-white">Saturday: 10 AM - 4 PM</p>
+                <p class="text-white">Sunday: Closed</p>   
+               
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
 </html>

@@ -81,6 +81,8 @@ footer a:hover {
                     <a class="nav-link" href="pricing.html">Pricing</a>
                 </li>
             </ul>
+            <span class="navbar-text text-white ml-auto" id="datetime"></span> <!-- Moved to right corner -->
+
         </div>
     </nav>
 
@@ -119,6 +121,23 @@ footer a:hover {
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function updateDateTime() {
+        const now = new Date();
+        const options = { 
+            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', 
+            hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true 
+        };
+
+        // Philippine time zone (GMT+8)
+        const formattedDate = now.toLocaleString('en-US', { timeZone: 'Asia/Manila', ...options });
+        document.getElementById('datetime').textContent = formattedDate;
+    }
+
+    setInterval(updateDateTime, 1000); // Update the date and time every second
+    updateDateTime(); // Initialize the time when the page loads
+</script>
 </body>
 
 <footer class="bg-dark text-white text-center py-4">
